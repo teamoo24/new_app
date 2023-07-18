@@ -9,20 +9,17 @@
     <script src="https://unpkg.com/vue"></script>
   </head>
   <body>
-    <h1>Vue.js</h1>
-    <div id="appp">
-      {{ message }}
+    <div id="app">
+      <p>{{ message }}</p>
     </div>
-    <!-- <div id="app"></div> -->
-    <!-- built files will be auto injected -->
-    <script>
-      Vue.createApp({
-        data() {
-          return {
-            message: 'Hello Vue!'
-          }
-        }
-      }).mount('#appp')
-    </script>
   </body>
+  <script>
+    Vue.createApp({
+      data: function() {
+        return {
+          message : "みなさん、こんにちは"
+        };
+      }
+    }).mount("#app")
+  </script>
 </html>
