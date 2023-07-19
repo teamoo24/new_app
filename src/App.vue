@@ -1,4 +1,15 @@
 <template>
-  <a href="http://localhost:8080/practice/chap02/hello.html">http://localhost:8080/practice/chap02/hello.html</a>
+  <PracticeLink></PracticeLink>
 </template>
 
+
+<script>
+import PracticeLink from './components/PracticeLink.vue'
+
+export default {
+  name: 'App',
+  components: {
+    PracticeLink
+  }
+}
+</script>
