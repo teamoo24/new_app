@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- こちらはMustache構文です。 -->
+            {{ message }}
+            <!-- こちらはディレクティブです。 -->
+            <p v-text="message"></p>
+            <!-- v-preの練習 -->
+            <p v-pre>{{ message }}</p>
+            <!-- v-bindの練習 -->
+            <a v-bind:href="url">kyonマガジン</a>
+            <!-- bind_bool -->
+            <p><input type="button" value="クリック" v-bind:disabled="flag"/></p>
+        </div>
+    </body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/hello.js"></script>
+</html>
